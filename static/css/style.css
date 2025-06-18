@@ -8,6 +8,8 @@ body {
 h1{
     text-align: center;
 }
+
+/*NAVIGATION BAR */
 .navbar {
     display: flex;
     flex-direction: column;
@@ -58,6 +60,7 @@ h1{
     text-decoration: underline;
   
 }
+/* TOGGLE BUTTON  */
 .menu-toggle {
     font-size: 24px;
     background: none;
@@ -82,7 +85,7 @@ h1{
     font-size: 18px;
     margin-bottom: 10px;
 }
-/* Adjust layout for larger screens */
+/*Larger screens */
 @media (min-width: 768px) {
     .menu-toggle {
         display: none; /* Hide the menu button */
@@ -99,42 +102,35 @@ h1{
         padding: 0 15px;
     }
 }
-/* Hero Section */
-.hero {
-  background: url('../images/hero_bg.jpg') center/cover no-repeat;
-  color: white;
+/* HERO SECTION*/
+.container-hero {
+  background: url('../images/hero.jpg') center/cover no-repeat;
+  color: black;
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 5rem;
+  border-radius: 10px;
 }
 
-.hero h1 {
+.container-hero h1 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
+  font-weight: bolder;
 }
-
-.hero-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.hero-card h2 {
+.container-hero h2 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
+  font-weight: bolder;
 }
 
-.hero-card p {
+.container-hero p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  font-weight: bolder;
 }
 
-.hero-card button {
+.container-hero button {
   background: #4CAF50;
   color: white;
   border: none;
@@ -151,11 +147,11 @@ h1{
 
 /* Larger screens */
 @media (min-width: 768px) {
-  .hero {
+ .container-hero  {
     padding: 5rem 2rem;
   }
 
-  .hero h1 {
+.container-hero  h1 {
     font-size: 2.5rem;
   }
 
@@ -163,14 +159,15 @@ h1{
     font-size: 1.8rem;
   }
 
-  .hero-card p {
+.container-hero  p {
     font-size: 1.2rem;
   }
 
-  .hero-card button {
+.container-hero  button {
     font-size: 1.1rem;
   }
 }
+/* ABOUT US SECTION*/
 /* Container About Section */
 .container-abaut {
   padding: 2rem 1rem;
@@ -249,11 +246,219 @@ h1{
   transition: background 0.3s ease;
   margin-top: 0;
 }
-/* Main footer top section */
+.button button:hover {
+  background-color: #0056b3;
+}
+.container-grid{
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+img{
+  width: 200px;         /* Full width of its container */
+  height: 200px;        /* Maintain aspect ratio */
+  border-radius: 200px; /* Rounded corners (optional) */
+  margin: 0 auto;      /* Center image horizontally */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+ .container-grid .custom-style li{
+  list-style: none;
 
+}
+h2{
+  text-align: center;
+  font-weight: bolder;
+}
+.pp{
+  text-align: center;
+  font-weight: bolder;
+}
+/* SERVICES */
+.container-services,
+.container-contact{
+  text-align: center;
+}
+/* Collapse styles */
+.accordion-button {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.accordion-button span {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+}
+
+.accordion-body {
+  font-size: 0.95rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.accordion ul {
+  padding-left: 1.25rem;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.accordion li {
+  margin-bottom: 0.5rem;
+}
+
+/* Nested accordions */
+.accordion .accordion {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-left: 2px solid #dee2e6;
+  padding-left: 0.5rem;
+}
+
+/* Optional: Accordion item shadow */
+.accordion-item {
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.accordion-button:not(.collapsed) {
+  background-color: #e7f1ff;
+  color: #0d6efd;
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 768px) {
+  .accordion-button {
+    font-size: 1.1rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .accordion-body {
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
+
+  .accordion .accordion {
+    padding-left: 1rem;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) {
+  .accordion-button {
+    font-size: 1.2rem;
+  }
+
+  .accordion-body {
+    font-size: 1.05rem;
+  }
+}
+/* CONTACT SECTION*/
+#contact {
+  padding: 2rem 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings inside contact section */
+#contact h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* Django message display */
+.success-message {
+  text-align: center;
+  color: green;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Form groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+.contact-form button {
+  background: #4CAF50;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+.container-grid1{
+  background-color: whitesmoke;
+  padding: 3rem;
+  text-align: start;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+.custom-style p{
+  text-align: start;
+}
+.container{
+  background-color: whitesmoke;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+/* FOOTER SECTION*/
 .footer-section {
   background-color: rgb(92, 173, 219);
-  color: white;
+  color: rgb(27, 14, 14);
   padding: 2rem 1rem;
   font-family: 'Segoe UI', sans-serif;
   }
@@ -346,153 +551,4 @@ h1{
   .footer-social {
     justify-content: center;
   }
-}
-/* About us Page */
-.container{
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-top: 0;
-
-}
-h1 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-img.img-fluid {
-    max-width: 100%;
-    height: 450px;
-   
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-/* Optional padding on smaller screens */
-@media (max-width: 767px) {
-    .container {
-        padding: 20px;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    .col-md-8 {
-        text-align: justify;
-    }
-}
-.about1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-   }
-
-.card1a,
-.card3{
-    background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 10px;
-    text-align: left;
-}
-.card2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
-.card2a {
-  background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 10px;
-    text-align: left;
-}
- 
-  
-
-.card1a h2, .card1a h3 {
-    color: #444;
-    text-align: center;
-}
-
-/* Card Sections */
-.card2, .card3 {
-    text-align: center;
-}
-.card3 {
-    background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.card2 h2, .card3 h2 {
-    font-size: 1.5rem;
-    color: #222;
-}
-
-
-/* Tablet and Desktop View */
-@media (min-width: 768px) {
-    .container-about {
-        flex-direction: row;
-        text-align: left;
-    }
-
-    .about-card {
-        flex: 1;
-        text-align: center;
-    }
-
-    .about-carda {
-        flex: 2;
-        padding-left: 20px;
-    }
-
-    .about1 {
-        align-items: flex-start;
-    }
-
-    .about-card1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .card1a {
-        flex: 1;
-        min-width: 45%;
-    }
-
-    .card2a {
-        text-align: left;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container-about, .about1, .card2, .card3 {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .about-card img {
-        width: 200px;
-    }
-
-    .about-carda h1 {
-        font-size: 2.2rem;
-    }
 }

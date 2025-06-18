@@ -3,9 +3,9 @@
 {% block title %} Home | Techwell Therapy Hub{% endblock %}
 
 {%  block content %}
-<section class="hero">
+<section class="container-hero">
     <h1>Welcome to Techwell Therapy Hub</h1>
-    <div class="hero-card">
+    <div>
         <h2><strong>Compassionate Counseling for a Happier, Healthier You</strong></h2>
         <p>
             At Techwell Therapy Hub, we provide a safe and supportive space for healing, 
@@ -13,9 +13,10 @@
             empower you to live a happier, healthier life.
         </p>
         <button>Book a session now</button>
+        <button>Learn more</button>
     </div>
 </section>
-<button>Learn more</button>
+
 <div class="container-abaut">
     
     <div class="card">
@@ -42,9 +43,10 @@
     <p>Grief & Life Transitions Support</p>
 </div>
 </div>
+<section id="about">
 <div class="container-grid">
-    <div class="row">
-        <div class="col-md-4"><img src={% static 'images/Profile.png' %} alt=""  width="350" height="350"></div>
+  <div class="row">
+    <div class="col-md-2"></div>
         <div class="col-md-8">
             <h1>About me</h1>
             <p>Ever since I can remember, I’ve been drawn to understanding people—their emotions, struggles, and unique journeys. My own 
@@ -58,126 +60,380 @@
                 do this alone."</p>
                 <p>💙 You deserve support, healing, and clarity. Let’s take this journey together.</p>
         </div>
+        <div class="col-md-2"></div>
         </div>
     </div>
     <div class="container-grid">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Qualifications</h2>
-        <ul class="list-group shadow">
-            <li class="list-group-item"><strong>Master’s in Clinical Psychology</strong> (University Name)</li><br>
-            <li class="list-group-item"><strong> Bachelor’s in Psychology</strong> (University Name)</li><br>
-            <li class="list-group-item"><strong>Certified CBT Therapist</strong> (Certifying Organization)</li><br>
-            <li class="list-group-item"><strong>Licensed Professional Counsellor (LPC)</strong> (Licensing Body)</li><br>
-            <li class="list-group-item"><strong> Member of the BACP & APA</strong></li>
-        </ul>
-            </div>
-            <div class="col-md-4">
-                <h3>My Experience</h3>
-            <p>With over <strong>5 years of counselling experience</strong>, I have worked with individuals from diverse backgrounds, helping them navigate life’s challenges with resilience and clarity.</p>
-            <p>I have provided therapy in <strong>private practice, mental health clinics, and corporate wellness programs</strong>, supporting clients in managing anxiety, stress, and emotional well-being.</p>           
-            </div>
-            <div class="col-md-4">
-                <h3>My Specialties</h3>
-            <ul>
-                <li>Anxiety & Stress Management</li>
-                <li>Depression & Emotional Well-being</li>
-                <li>Trauma & PTSD Therapy</li>
-                <li>Self-Esteem & Confidence Building</li>
-                <li>Relationship & Couples Counselling</li>
-            </ul>     
-            </div>
-        </div>
-    </div>
-    <div class="container-grid">
-        <div class="row"><h2>My Approach & Philosophy</h2>
-        <p><strong>Empowering you to heal, grow, and thrive.</strong></p>
-            <div class="col-md-4">
-                <h3>My Philosophy</h3>
-        <p>I believe that everyone deserves a <strong>safe, supportive space</strong> to explore their emotions and challenges. My mission is to help clients develop a <strong>deeper understanding of themselves</strong> and empower them to create meaningful change.</p>               
-        <h4>A Safe Space for You</h4>
-        <p>Therapy should be a place where you feel <strong>heard, understood, and valued</strong>. I strive to create a warm, compassionate, and non-judgmental environment where you can work through your concerns at your own pace.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>My Approach</h3>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"><img src={% static 'images/Profile.png' %} alt="">
+        <h6>Erastus Ivelia Matekwa</h6>
+        <p>Therapist for individuals, couples, families</p>
+      </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>  
+    <div class="container d-none d-md-block">
+  <div class="row">
+    <h2>Achievements & Expertise</h2>
+    <div class="accordion" id="qualificationsAccordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingQualifications">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQualifications" aria-expanded="false" aria-controls="collapseQualifications">
+        <h6>Qualifications</h6>
+      </button>
+    </h2>
+    <div id="collapseQualifications" class="accordion-collapse collapse" aria-labelledby="headingQualifications" data-bs-parent="#qualificationsAccordion">
+      <div class="accordion-body">
         <ul>
-            <li><strong>Client-Centered Therapy</strong> – You set the pace, I guide the journey.</li>
-            <li><strong>CBT & Mindfulness</strong> – Helping you develop healthier thought patterns.</li>
-            <li><strong>Holistic & Solution-Focused</strong> – A blend of science and compassion.</li>
-            <li><strong>Personalized for You</strong> – Every client is unique, and so is my approach.</li>
+          <li><strong>Master’s in Clinical Psychology</strong> (University Name)</li>
+          <li><strong>Bachelor’s in Psychology</strong> (University Name)</li>
+          <li><strong>Certified CBT Therapist</strong> (Certifying Organization)</li>
+          <li><strong>Licensed Professional Counsellor (LPC)</strong> (Licensing Body)</li>
+          <li><strong>Member of the BACP & APA</strong></li>
         </ul>
-            </div>
-            <div class="col-md-4">
-                <h2>Why I Do This Work</h2>
-    <p>A personal journey of passion, purpose, and healing.</p>
-    <h3>My Journey</h3>
-    <p>My passion for counselling began when I saw the power of therapy firsthand. Watching a loved one overcome anxiety with professional support made me realize how important it is to have a safe space to heal and grow.</p>
-    <h3>What Drives Me</h3>
-    <p>Helping people find clarity and confidence is my life’s work. There’s nothing more fulfilling than seeing a client rediscover their strength, regain hope, and embrace their full potential.</p>  
-    <h3>My Message to You</h3>
-    <p>You are not alone. No matter what you’re going through, there is always a path forward. My role is to support, guide, and empower you on this journey.</p>
-            </div>
-        </div>
+      </div>
     </div>
-<a href="/book-session" class="button">Let’s Work Together</a>
-<button class="button">Book a session now</button>
-<button class="button">Book a Session now</button>
-<div class="card">
-        <h2>Our Services</h2>
-        <p>Helping you achieve mental wellness and personal growth.</p>
+  </div>
+</div>
+    <div class="accordion" id="experienceAccordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingExperience">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExperience" aria-expanded="false" aria-controls="collapseExperience">
+        <h6>My Experience</h6>
+      </button>
+    </h2>
+    <div id="collapseExperience" class="accordion-collapse collapse" aria-labelledby="headingExperience" data-bs-parent="#experienceAccordion">
+      <div class="accordion-body">
+        <p>With over <strong>5 years of counselling experience</strong>, I have worked with individuals from diverse backgrounds, helping them navigate life’s challenges with resilience and clarity.</p>
+        <p>I have provided therapy in <strong>private practice, mental health clinics, and corporate wellness programs</strong>, supporting clients in managing anxiety, stress, and emotional well-being.</p>
+      </div>
     </div>
-    <section class="services">
-    <h3>Individual Counselling</h3>
-    <p>One-on-one sessions between a counsellor and a client</p>
-    <ul>
-        <li>Anxiety, depression, stress</li>
-        <li>Self-esteem and personal development</li>
-        <li>Grief and loss</li>
-        <li>Trauma and abuse recovery</li>
-    </ul>
-    <h3>Couples Therapy</h3>
-    <p>We help partners resolve conflict, improve communication, and strengthen the relationship</p>
-    <ul>
-        <li>Infidelity</li>
-        <li>Communication issues</li>
-        <li>Emotional disconnect</li>
-        <li>Conflict resolution</li>
-    </ul>
-    <h3>Family Counseling</h3>
-    <p>Helping couples build stronger relationships and communication.</p>
-    <ul>
-        <li>Parent-child conflict</li>
-        <li>Divorce, separation</li>
-        <li>Grief, blended families</li>
-        <li>Teen behavioral concerns</li>
-    </ul>
-    <h3>Trauma and Crisis Counselling</h3>
-    <p>We help individuals process sudden life-altering events</p>
-    <ul>
-        <li>Accidents</li>
-        <li>Death of a loved one</li>
-        <li>Assault or abuse</li>
-        <li>PTSD support</li>
-    </ul>
-    <h3>Online / Virtual Counselling</h3>
-    <p>We offers all of the above through Zoom, WhatsApp and google meet</p>
-<h2>Contact us</h2>
-<p class="subtitle">We’re here to help. Reach out to us with any questions, service requests, or support needs.</p>
+  </div>
+</div>
+    <div class="accordion" id="specialtiesAccordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSpecialties">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpecialties" aria-expanded="false" aria-controls="collapseSpecialties">
+        <h6>My Specialties</h6>
+      </button>
+    </h2>
+    <div id="collapseSpecialties" class="accordion-collapse collapse" aria-labelledby="headingSpecialties" data-bs-parent="#specialtiesAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>Anxiety & Stress Management</li>
+          <li>Depression & Emotional Well-being</li>
+          <li>Trauma & PTSD Therapy</li>
+          <li>Self-Esteem & Confidence Building</li>
+          <li>Relationship & Couples Counselling</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<style>
+</style>
 
-<div class="contact-card">
-    <h3>Reach Us Directly</h3>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <h2 class="mt-4 mb-3">My Approach & Philosophy</h2>
+    <p class="pp"><strong>Empowering you to heal, grow, and thrive.</strong></p>
+    <div class="col-lg-10">
+      <div class="accordion" id="philosophyAccordion">
+
+        <!-- My Philosophy -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingPhilosophy">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhilosophy" aria-expanded="false" aria-controls="collapsePhilosophy">
+              <h6 class="mb-0">My Philosophy</h6>
+            </button>
+          </h2>
+          <div id="collapsePhilosophy" class="accordion-collapse collapse" aria-labelledby="headingPhilosophy" data-bs-parent="#philosophyAccordion">
+            <div class="accordion-body">
+              <p>I believe that everyone deserves a <strong>safe, supportive space</strong> to explore their emotions and challenges. My mission is to help clients develop a <strong>deeper understanding of themselves</strong> and empower them to create meaningful change.</p>
+              <h4>A Safe Space for You</h4>
+              <p>Therapy should be a place where you feel <strong>heard, understood, and valued</strong>. I strive to create a warm, compassionate, and non-judgmental environment where you can work through your concerns at your own pace.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- My Approach -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingApproach">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseApproach" aria-expanded="false" aria-controls="collapseApproach">
+              <h6 class="mb-0">My Approach</h6>
+            </button>
+          </h2>
+          <div id="collapseApproach" class="accordion-collapse collapse" aria-labelledby="headingApproach" data-bs-parent="#philosophyAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li><strong>Client-Centered Therapy</strong> – You set the pace, I guide the journey.</li>
+                <li><strong>CBT & Mindfulness</strong> – Helping you develop healthier thought patterns.</li>
+                <li><strong>Holistic & Solution-Focused</strong> – A blend of science and compassion.</li>
+                <li><strong>Personalized for You</strong> – Every client is unique, and so is my approach.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why I Do This Work -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingWhy">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWhy" aria-expanded="false" aria-controls="collapseWhy">
+              <h6 class="mb-0">Why I Do This Work</h6>
+            </button>
+          </h2>
+          <div id="collapseWhy" class="accordion-collapse collapse" aria-labelledby="headingWhy" data-bs-parent="#philosophyAccordion">
+            <div class="accordion-body">
+              <p>A personal journey of passion, purpose, and healing.</p>
+              <h6>My Journey</h6>
+              <p>My passion for counselling began when I saw the power of therapy firsthand. Watching a loved one overcome anxiety with professional support made me realize how important it is to have a safe space to heal and grow.</p>
+              <h6>What Drives Me</h6>
+              <p>Helping people find clarity and confidence is my life’s work. There’s nothing more fulfilling than seeing a client rediscover their strength, regain hope, and embrace their full potential.</p>
+              <h6>My Message to You</h6>
+              <p>You are not alone. No matter what you’re going through, there is always a path forward. My role is to support, guide, and empower you on this journey.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!--Services Offered-->
+<section id="services">
+<div class="container my-5">
+  <div class="row">
+    <h2><strong>Services</strong></h2>
+<p class="pp"><strong>Check our services below:</strong></p>
+    <div class="col-md-12">
+      <div class="accordion" id="mainAccordion">
+        <!-- Individual Counselling -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingIndividual">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIndividual" aria-expanded="false" aria-controls="collapseIndividual">
+              <span class="fs-5 fw-bold">Individual Counselling</span>
+            </button>
+          </h2>
+          <div id="collapseIndividual" class="accordion-collapse collapse" data-bs-parent="#mainAccordion">
+            <div class="accordion-body">
+              <div class="accordion" id="nestedIndividual">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingIndividualSession">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIndividualSession" aria-expanded="false" aria-controls="collapseIndividualSession">
+                      <span class="fs-6">One-on-one sessions between a counsellor and a client</span>
+                    </button>
+                  </h2>
+                  <div id="collapseIndividualSession" class="accordion-collapse collapse" data-bs-parent="#nestedIndividual">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Anxiety, depression, stress</li>
+                        <li>Self-esteem and personal development</li>
+                        <li>Grief and loss</li>
+                        <li>Trauma and abuse recovery</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Couples Therapy -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCouples">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCouples" aria-expanded="false" aria-controls="collapseCouples">
+              <span class="fs-5 fw-bold">Couples Therapy</span>
+            </button>
+          </h2>
+          <div id="collapseCouples" class="accordion-collapse collapse" data-bs-parent="#mainAccordion">
+            <div class="accordion-body">
+              <div class="accordion" id="nestedCouples">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingCouplesSession">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCouplesSession" aria-expanded="false" aria-controls="collapseCouplesSession">
+                      <span class="fs-6">We help partners resolve conflict and build trust</span>
+                    </button>
+                  </h2>
+                  <div id="collapseCouplesSession" class="accordion-collapse collapse" data-bs-parent="#nestedCouples">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Infidelity</li>
+                        <li>Communication issues</li>
+                        <li>Emotional disconnect</li>
+                        <li>Conflict resolution</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Family Counseling -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFamily">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFamily" aria-expanded="false" aria-controls="collapseFamily">
+              <span class="fs-5 fw-bold">Family Counseling</span>
+            </button>
+          </h2>
+          <div id="collapseFamily" class="accordion-collapse collapse" data-bs-parent="#mainAccordion">
+            <div class="accordion-body">
+              <div class="accordion" id="nestedFamily">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFamilySession">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFamilySession" aria-expanded="false" aria-controls="collapseFamilySession">
+                      <span class="fs-6">Helping couples build stronger relationships and communication.</span>
+                    </button>
+                  </h2>
+                  <div id="collapseFamilySession" class="accordion-collapse collapse" data-bs-parent="#nestedFamily">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Parent-child conflict</li>
+                        <li>Divorce, separation</li>
+                        <li>Grief, blended families</li>
+                        <li>Teen behavioral concerns</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trauma and Crisis Counselling -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTrauma">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrauma" aria-expanded="false" aria-controls="collapseTrauma">
+              <span class="fs-5 fw-bold">Trauma and Crisis Counselling</span>
+            </button>
+          </h2>
+          <div id="collapseTrauma" class="accordion-collapse collapse" data-bs-parent="#mainAccordion">
+            <div class="accordion-body">
+              <div class="accordion" id="nestedTrauma">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTraumaSession">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTraumaSession" aria-expanded="false" aria-controls="collapseTraumaSession">
+                      <span class="fs-6">We help individuals process sudden life-altering events</span>
+                    </button>
+                  </h2>
+                  <div id="collapseTraumaSession" class="accordion-collapse collapse" data-bs-parent="#nestedTrauma">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Accidents</li>
+                        <li>Death of a loved one</li>
+                        <li>Assault or abuse</li>
+                        <li>PTSD support</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Online / Virtual Counselling -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOnline">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnline" aria-expanded="false" aria-controls="collapseOnline">
+              <span class="fs-5 fw-bold">Online / Virtual Counselling</span>
+            </button>
+          </h2>
+          <div id="collapseOnline" class="accordion-collapse collapse" data-bs-parent="#mainAccordion">
+            <div class="accordion-body">
+              <div class="accordion" id="nestedOnline">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOnlineSession">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnlineSession" aria-expanded="false" aria-controls="collapseOnlineSession">
+                      <span class="fs-6">We offer all of the above through Zoom, WhatsApp and Google Meet</span>
+                    </button>
+                  </h2>
+                  <div id="collapseOnlineSession" class="accordion-collapse collapse" data-bs-parent="#nestedOnline">
+                    <div class="accordion-body">
+                      <p>Convenient and flexible sessions tailored to your comfort and availability.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- End mainAccordion -->
+    </div><!-- End col -->
+  </div><!-- End row -->
+</div><!-- End container -->
+</section>
+<!-- Contact Section -->
+
+<section id="contact">
+  <h2>Contact us</h2>
+  <p class="subtitle">We’re here to help. Reach out to us with any questions, service requests, or support needs.</p>
+
+  {% if messages %}
+    {% for message in messages %}
+      <p class="success-message">{{ message }}</p>
+    {% endfor %}
+  {% endif %}
+
+  <form method="POST" action="#contact" class="contact-form">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label for="id_name">Name:</label>
+      {{ form.name }}
+    </div>
+
+    <div class="form-group">
+      <label for="id_email">Email:</label>
+      {{ form.email }}
+    </div>
+
+    <div class="form-group">
+      <label for="id_subject">Subject:</label>
+      {{ form.subject }}
+    </div>
+
+    <div class="form-group">
+      <label for="id_message">Message:</label>
+      {{ form.message }}
+    </div>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+<div class="container-grid1">
+  <div class="row">
+     <div class="col-md-4"><h2>Reach us directly:</h2></div>
+     <div class="col-md-4 custom-style" >
+      
     <p><strong>Email:</strong> erastusivelia@gmail.com</p>
     <p><strong>Email:</strong> catelilungo@gmail.com</p>
     <p><strong>Phone:</strong> +254 711 897 242</p>
     <p><strong>Phone:</strong> +254 792 501 015</p>
     <p><strong>Location:</strong> Nairobi, Kenya</p>
-    <p><strong>Working Hours:</strong><br>
-        <ul>
-            <li>Mon - Fri: 9:00 AM - 5:00 PM</li>
-            <li>Sat: 9:00 AM - 1:00 PM</li>
-        </ul> </p>
+    <a href=""><button class="button">Book a session now</button></a> 
     
-</div>    
+    </div>
+    <div class="col-md-4 custom-style">
+      <p><strong>Working Hours:</strong><br>
+            <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
+            <p>Sat: 9:00 AM - 1:00 PM</p>
+       
+    </div>
+  </div>
+</div>
+
+
+  
 
     
 
